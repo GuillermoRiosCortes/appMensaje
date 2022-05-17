@@ -2,10 +2,12 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
+#mensaje dentro del navegador
 @app.route('/', methods=['GET'])
 def mensaje():
     return jsonify({"response":"Bienvenidos Technology Latam"})
 
+#mensaje con palabras redundantes para un posible error
 @app.route('/error', methods=['GET'])
 def err():
     error = "Error! este es un mensaje de error"
