@@ -9,7 +9,7 @@ def mensaje():
 
 #mensaje con palabras redundantes para un posible error
 @app.route('/error', methods=['GET'])
-def err():
+def error():
     error = "Error! este es un mensaje de error"
     return error
 
